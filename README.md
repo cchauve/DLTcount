@@ -1,6 +1,6 @@
 # Counting and sampling gene family evolutionary histories in the duplication-loss and duplication-loss-transfer models
 
-Cedric Chauve, Yann Ponty, Michael Wallner
+### Cedric Chauve, Yann Ponty, Michael Wallner, May 2 2019.
 
 This repository contains the code and experimental results for the paper *Counting and sampling gene family evolutionary histories in the duplication-loss and duplication-loss-transfer models*.
 
