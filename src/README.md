@@ -1,5 +1,5 @@
-# Counting and sampling DLT histories
-# Cedric Chauve, Yann Ponty, Michael Wallner, April 24, 2019.
+# Counting and sampling gene family evolutionary histories in the duplication-loss and duplication-loss-transfer models
+## Cedric Chauve, Yann Ponty, Michael Wallner, May 2, 2019.
 
 1. DLTcount
 
