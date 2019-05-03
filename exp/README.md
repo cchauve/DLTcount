@@ -2,8 +2,6 @@
 
 ### Cedric Chauve, Yann Ponty, Michael Wallner, May 2, 2019.
 
-#### Program DLTcount.py
-
 The directory contains the results dicussed in the paper, together with the scripts to obtain these results.
 
 To repeat the experiments:  
