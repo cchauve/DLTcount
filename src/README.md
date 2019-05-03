@@ -1,7 +1,7 @@
 # Counting and sampling gene family evolutionary histories in the duplication-loss and duplication-loss-transfer models
-## Cedric Chauve, Yann Ponty, Michael Wallner, May 2, 2019.
+### Cedric Chauve, Yann Ponty, Michael Wallner, May 2, 2019.
 
-1. DLTcount
+#### Program DLTcount.py
 
 This python program computes, for a given species tree, the number of histories of a given size n in an evolutionary model (DL or DLT), and samples histories.
 
@@ -13,7 +13,7 @@ If the number of samples is 0, no history is samples and only the number of hist
 
 USAGE:  
 
-DLTcount <tree> <MODEL> <n> <number of samples>    
+python DLTcount.py <tree> <MODEL> <n> <number of samples>    
 tree = random k | rrandom k | caterpillar k | rcaterpillar k | complete h | rcomplete h | newick string  
 	random k = random binary tree with k leaves  
 	rrandom k = randomly ranked random binary tree with k leaves  
@@ -42,7 +42,7 @@ Sampled history 1: ['D9', 'L2', 'D8', 'L3', 'Z4', 'L7', 'D5', 'Z3', 'L4', 'Z3', 
 Sampled history 2: ['D9', 'L2', 'L5', 'Z6', 'L2', 'D8', 'T3->0', 'T3->0', 'Z3', 'Z0', 'Z0', 'L4', 'L7', 'Z3', 'L4', 'L7']  
 Sampled history 3: ['L2', 'T5->1', 'L3', 'Z4', 'D1', 'T1->5', 'Z0', 'L3', 'Z4', 'T1->5', 'Z0', 'Z3', 'L4', 'L7']  
 
-2. DLTasymptotics <tree> <MODEL>  
+#### Program DLTasymptotics.py  
 
 This python program computes, for a given species tree, the asymptotics growth factor of the number of histories of a given size n in an evolutionary model (DL or DLT), and samples histories.
 
@@ -52,7 +52,7 @@ The model can be DL (Duplication-Loss) or DLT (Duplication-Loss-Transfer).
 
 USAGE:  
 
-DLTasymptotics <tree> <MODEL>  
+python DLTasymptotics.py <tree> <MODEL>  
 tree = random k | rrandom k | caterpillar k | rcaterpillar k | complete h | rcomplete h | newick string  
 	random k = random binary tree with k leaves  
 	rrandom k = randomly ranked random binary tree with k leaves  
