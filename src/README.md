@@ -33,7 +33,7 @@ DX = Gene duplication at species X
 TX->Y = HGT from species X to species Y  
 
 Example:  
-> > python DLTcount.py rrandom 4 DLT 5 3  
+> \>python DLTcount.py rrandom 4 DLT 5 3  
 #Species tree: (((0)1)2,((3,4)5,(6)7)8)9  
 #Model: DLT  
 #History size: 5  
