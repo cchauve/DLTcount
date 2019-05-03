@@ -6,6 +6,6 @@ This repository contains the code and experimental results for the paper *Counti
 
 The directory src/ contains the code and the instructions to run it.
 
-The directory exp/ contains the results of the experiments described in the paper.
+The directory exp/ contains the results of the experiments described in the paper and the code to reproduce these experiments.
 
 The directory doc/ contains a Jupyter notebook allowing to reproduce the figures of the paper.
