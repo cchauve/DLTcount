@@ -15,13 +15,13 @@ USAGE:
 
 python DLTcount.py <tree> <MODEL> <n> <number of samples>    
 tree = random k | rrandom k | caterpillar k | rcaterpillar k | complete h | rcomplete h | newick string  
-	* random k = random binary tree with k leaves  
-	* rrandom k = randomly ranked random binary tree with k leaves  
-	* caterpillar k = caterpillar with k leaves  
-	* rcaterpillar k = randomly ranked caterpillar with k leaves  
-	* complete h = complete binary tree with 2^h leaves  
-	* rcomplete h = randomly ranked complete binary tree with 2^h leaves  
-	* newick string = string is the Newick representation of a tree  
+	- random k = random binary tree with k leaves  
+	- rrandom k = randomly ranked random binary tree with k leaves  
+	- caterpillar k = caterpillar with k leaves  
+	- rcaterpillar k = randomly ranked caterpillar with k leaves  
+	- complete h = complete binary tree with 2^h leaves  
+	- rcomplete h = randomly ranked complete binary tree with 2^h leaves  
+	- newick string = string is the Newick representation of a tree  
 MODEL = DL | DLT  
 n = history size  
 number of samples = non-negative integer, number of sampled histories  
