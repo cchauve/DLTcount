@@ -33,7 +33,7 @@ DX = Gene duplication at species X
 TX->Y = HGT from species X to species Y  
 
 Example:  
-> python DLTcount.py rrandom 4 DLT 5 3  
+>> python DLTcount.py rrandom 4 DLT 5 3  
 #Species tree: (((0)1)2,((3,4)5,(6)7)8)9  
 #Model: DLT  
 #History size: 5  
@@ -54,19 +54,19 @@ USAGE:
 
 python DLTasymptotics.py <tree> <MODEL>  
 tree = random k | rrandom k | caterpillar k | rcaterpillar k | complete h | rcomplete h | newick string  
-	* random k = random binary tree with k leaves  
-	* rrandom k = randomly ranked random binary tree with k leaves  
-	* caterpillar k = caterpillar with k leaves  
-	* rcaterpillar k = randomly ranked caterpillar with k leaves  
-	* complete h = complete binary tree with 2^h leaves  
-	* rcomplete h = randomly ranked complete binary tree with 2^h leaves  
-	* newick string = string is the Newick representation of a tree  
+	- random k = random binary tree with k leaves  
+	- rrandom k = randomly ranked random binary tree with k leaves  
+	- caterpillar k = caterpillar with k leaves  
+	- rcaterpillar k = randomly ranked caterpillar with k leaves  
+	- complete h = complete binary tree with 2^h leaves  
+	- rcomplete h = randomly ranked complete binary tree with 2^h leaves  
+	- newick string = string is the Newick representation of a tree  
 MODEL = DL | DLT  
 
 Example  
-> python DLTasymptotics.py newick '(0,(1,(2,(3,4)5)6)7)8' DL  
+>> python DLTasymptotics.py newick '(0,(1,(2,(3,4)5)6)7)8' DL  
 (0,(1,(2,(3,4)5)6)7)8	30.527541446606055 
-> python DLTasymptotics.py newick '(0,(1,(2,(3,4)5)6)7)8' DLT  
+>> python DLTasymptotics.py newick '(0,(1,(2,(3,4)5)6)7)8' DLT  
 (0,(1,(2,(3,4)5)6)7)8	46.46904190465355  
 
 Warning: in the DLT model, solving the system can require a lot of memory and time.
