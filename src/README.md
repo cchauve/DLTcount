@@ -14,13 +14,13 @@ If the number of samples is 0, no history is samples and only the number of hist
 USAGE:  
 
 python DLTcount.py <tree> <MODEL> <n> <number of samples>    
-tree = random k | rrandom k | caterpillar k | rcaterpillar k | complete h | rcomplete h | newick string  
+tree = random k | rrandom k | caterpillar k | rcaterpillar k | balanced k | rbalanced k | newick string  
 	- random k = random binary tree with k leaves  
 	- rrandom k = randomly ranked random binary tree with k leaves  
 	- caterpillar k = caterpillar with k leaves  
 	- rcaterpillar k = randomly ranked caterpillar with k leaves  
-	- complete h = complete binary tree with 2^h leaves  
-	- rcomplete h = randomly ranked complete binary tree with 2^h leaves  
+	- balanced k = balanced binary tree with k leaves  
+	- rbalanced k = randomly ranked balanced binary tree with k leaves  
 	- newick string = string is the Newick representation of a tree  
 MODEL = DL | DLT  
 n = history size  
@@ -53,13 +53,13 @@ The model can be DL (Duplication-Loss) or DLT (Duplication-Loss-Transfer).
 USAGE:  
 
 python DLTasymptotics.py <tree> <MODEL>  
-tree = random k | rrandom k | caterpillar k | rcaterpillar k | complete h | rcomplete h | newick string  
+tree = random k | rrandom k | caterpillar k | rcaterpillar k | balanced k | rbalanced k | newick string  
 	- random k = random binary tree with k leaves  
 	- rrandom k = randomly ranked random binary tree with k leaves  
 	- caterpillar k = caterpillar with k leaves  
 	- rcaterpillar k = randomly ranked caterpillar with k leaves  
-	- complete h = complete binary tree with 2^h leaves  
-	- rcomplete h = randomly ranked complete binary tree with 2^h leaves  
+	- balanced k = balanced binary tree with k leaves  
+	- rbalanced k = randomly ranked balanced binary tree with k leaves  
 	- newick string = string is the Newick representation of a tree  
 MODEL = DL | DLT  
 
