@@ -115,7 +115,7 @@ def solveSystem(mySys,symVarList,suffix=''):
     solver_file.write('SOL = tmp_solve(ftree)\n')
 
 # ----------------------------------------------------------------------
-USAGE = 'DLTasymptotics <tree> <MODEL>\n'+'tree = random k | rrandom k | caterpillar k | rcaterpillar k | complete h | rcomplete h | newick string\n'+'\trandom k = random binary tree with k leaves\n'+'\trrandom k = randomly ranked random binary tree with k leaves\n'+'\tcaterpillar k = caterpillar with k leaves\n'+'\trcaterpillar k = randomly ranked caterpillar with k leaves\n'+'\tcomplete h = complete binary tree with 2^h leaves\n'+'\trcomplete h = randomly ranked complete binary tree with 2^h leaves\n'+'\tnewick string = string is the Newick representation of a tree\n'+'MODEL = DL | DLT'
+USAGE = 'DLTasymptotics <tree> <MODEL>\n'+'tree = random k | rrandom k | caterpillar k | rcaterpillar k | balanced k | rbalanced k | newick string\n'+'\trandom k = random binary tree with k leaves\n'+'\trrandom k = randomly ranked random binary tree with k leaves\n'+'\tcaterpillar k = caterpillar with k leaves\n'+'\trcaterpillar k = randomly ranked caterpillar with k leaves\n'+'\tbalanced k = balanced binary tree with k leaves\n'+'\trbalanced k = randomly ranked balanced binary tree with k leaves\n'+'\tnewick string = string is the Newick representation of a tree\n'+'MODEL = DL | DLT'
 
 def getTree(s1,s2):
     if s1 == 'newick':
@@ -132,16 +132,16 @@ def getTree(s1,s2):
             tree = randomOrderedBinaryTree(k)
         elif s1 == 'caterpillar':
             tree = buildCaterpillar(k)
-        elif s1 == 'complete':
-            tree = buildCompleteTree(k)
+        elif s1 == 'balanced':
+            tree = buildBalancedTree(k)
         elif s1 == 'rrandom':
             tree_aux = randomOrderedBinaryTree(k)
             (ranking,tree) = rankTreeRandomly(tree_aux)
         elif s1 == 'rcaterpillar':
             tree_aux = buildCaterpillar(k)
             (ranking,tree) = rankTreeRandomly(tree_aux)
-        elif s1 == 'rcomplete':
-            tree_aux = buildCompleteTree(k)
+        elif s1 == 'rbalanced':
+            tree_aux = buildBalancedTree(k)
             (ranking,tree) = rankTreeRandomly(tree_aux)
         else:
             tree = newick2Tree(s1)
