@@ -70,4 +70,4 @@ Example
 > \> python DLTasymptotics.py newick '(0,(1,(2,(3,4)5)6)7)8' DLT  
 (0,(1,(2,(3,4)5)6)7)8	46.46904190465355  
 
-Warning: in the DLT model, solving the system can require a lot of memory and time.
+**Warning**: in the DLT model, solving the system can require a lot of memory and time for large values of $k$.
