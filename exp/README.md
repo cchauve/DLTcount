@@ -12,7 +12,7 @@ The directory *scripts/* contains the python and shell scripts to repeat the exp
 > \> run_exp4.sh # Compute the asymototics growth factor for the generated trees, in the DL model  
 > \> run_exp5.sh # Sample 10000 histories of size 30, for 50 random species trees, in the DL and DLT models, both unranked and ranked (random ranking), results in sampling/  
 
-The directory *trees/* contains the 100 unranked species trees generated for experiments in unranked models; the trees of size *k* are in the file *trees_unranked_k*. It also contains the 10 random rankings generated for each such trees; the trees and rankings for species trees of size $k$ are in the file *trees_ranked_k*.
+The directory *trees/* contains the 100 unranked species trees generated for experiments in unranked models; the trees of size *k* are in the file *trees_unranked_k*. It also contains the 10 random rankings generated for each such trees; the trees and rankings for species trees of size *k* are in the file *trees_ranked_k*.
 
 The directory *unranked/* contains the results of counting the number of histories of size up to 50 for each unranked species tree; the results for the species trees of size *k* are in the file *results_unranked_k.gz*.
 
